@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login-page" class="login-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <h2>Login</h2>
+                </div>
+                <div class="login-content">
+                    <div class="form-group">
+                        <label for="role">Role</label>
+                        <select id="role">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+                    <button id="login-btn" class="login-button">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="student-dashboard" class="dashboard hidden">
+            <button id="close-student-dashboard" class="close-btn">&times;</button>
+            <h1>Student Dashboard</h1>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">Take Quiz</div>
+                <div class="dashboard-card">View Quiz Result</div>
+                <div class="dashboard-card">Submit Assignment</div>
+                <div class="dashboard-card">View Progress</div>
+                <div class="dashboard-card">Ask Doubt</div>
+                <div class="dashboard-card">Feedback</div>
+            </div>
+        </div>
+
+        <div id="teacher-dashboard" class="dashboard hidden">
+            <button id="close-teacher-dashboard" class="close-btn">&times;</button>
+            <h1>Teacher Dashboard</h1>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">Upload Quiz</div>
+                <div class="dashboard-card">Check Students' Results</div>
+                <div class="dashboard-card">Check Assignments</div>
+                <div class="dashboard-card">Reply to Doubts</div>
+                <div class="dashboard-card">Give Feedback</div>
+                <div class="dashboard-card">Upload Notes</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
